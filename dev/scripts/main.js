@@ -5,12 +5,10 @@ import Shows from './Shows';
 
 class Main extends React.Component {
     render() {
-        return (
-            <section className='main'>
-                <Navigation />
-                <Shows />
-            </section>
-        )
+        return <section className="main">
+            <Navigation onChange={this.onChange} onGenreChange={this.onGenreChange} {...this.state} />
+            <Shows />
+          </section>;
     }
 }
 
