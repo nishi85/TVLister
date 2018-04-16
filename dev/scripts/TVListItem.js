@@ -8,7 +8,8 @@ const TVListItem = (show) => {
   return (
     <li className="TVitem">
       <img src= {imgUrl} alt="" />
-      <span>{show.name} Average Rating:{show.rating}</span>
+      <span> Name:{show.name}</span>
+      <span> Average Rating:{show.rating}</span>
     </li>
   );
 };

@@ -1,36 +1,70 @@
 import React from "react";
 import ReactDom from "react-dom";
 import TVListItem from "./TVListItem";
-import axios from"axios";
 
 class Shows extends React.Component {
   constructor() {
     super();
     this.state = {
       shows: []
-    }
+    };
   }
 
   componentDidMount() {
-    const apiUrl = `https://api.themoviedb.org/3/tv/top_rated?api_key=4b75b5565f5c925d9378f82e67deeebe&language=en-US&page=1`;
+    this.fetchShows(this.props.url);
+  }
 
-    fetch(apiUrl)
-      .then(response => response.json())
-      .then((data ) => { 
-        console.log(data.results);
-        this.setState({
-            shows: [...data.results]
-        })
-      })
-      .catch(error => console.log(error));
+  componentWillReceiveProps(nextProps) {
+    if (this.props.url !== nextProps.url) {
+      this.fetchShows(nextProps.url);
     }
-  
+  }
+
+  fetchShows(url) {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => this.storeShows(data))
+      .catch(error => console.log(error));
+  }
+
+  storeShows(data){
+    const shows = data.results.map(result => {
+      const {
+        id,
+        genre_ids,
+        poster_path,
+        title,
+        vote_average,
+        release_date
+      } = result;
+      return {
+        id,
+        genre_ids,
+        poster_path,
+        title,
+        vote_average,
+        release_date
+      };
+    });
+
+    this.setState({ shows });
+  };
+
   render() {
     return (
       <section>
         <ul className="shows">
           {this.state.shows.map(show => {
-             return <TVListItem key={show.id} name={show.name} show={show} img={show.poster_path} rating = {show.vote_average} />;
+            console.log(show);
+            return (
+              <TVListItem
+                key={show.id}
+                name={show.name}
+                show={show}
+                img={show.poster_path}
+                rating={show.vote_average}
+              />
+            );
           })}
         </ul>
       </section>
@@ -39,3 +73,16 @@ class Shows extends React.Component {
 }
 
 export default Shows;
+
+
+
+  // fetch(apiUrl)
+  //     .then(response => response.json())
+  //     .then((data ) => { 
+  //       console.log(data.results);
+  //       this.setState({
+  //           shows: [...data.results]
+  //       })
+  //     })
+  //     .catch(error => console.log(error));
+  //   }
