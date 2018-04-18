@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Selection from "./Selection";
 import Slider from "./Slider";
-import SearchButton from "./SearchButton";
+import Button from "./Button";
 
 class Navigation extends React.Component {
 
@@ -33,7 +33,7 @@ class Navigation extends React.Component {
           <input type="range" min={rating.min} max={rating.max} step={rating.step} onChange={onChangeRating} defaultValue={rating.value} />
           <h3>{rating.value}</h3>
         </div>
-        <SearchButton onClick={this.props.onSearchButtonClick} />
+        <Button onClick={onSearchButtonClick} />
       </section>;
   }
 }
