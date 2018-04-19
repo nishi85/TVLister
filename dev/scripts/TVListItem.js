@@ -10,6 +10,8 @@ const TVListItem = (show) => {
          <Link to={`/shows/${show.id}`} className="thumbnail">
         <img src={imgUrl} alt="" />
         <div className="show-description">
+          <h3>{show.name}</h3>
+          <h4> Average Rating: {show.rating}</h4>
         </div>
       </Link>
     </li>

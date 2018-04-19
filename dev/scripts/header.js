@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 
 const Header = () => (
     <header>
-        <h1>Project</h1>
+        <h1>TV Lister!</h1>
     </header>
 )
 

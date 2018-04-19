@@ -102,7 +102,7 @@ class Main extends React.Component {
         id,
         genre_ids,
         poster_path,
-        title,
+        name,
         vote_average,
         release_date
       } = result;
@@ -110,7 +110,7 @@ class Main extends React.Component {
         id,
         genre_ids,
         poster_path,
-        title,
+        name,
         vote_average,
         release_date
       };

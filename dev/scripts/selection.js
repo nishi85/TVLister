@@ -5,7 +5,7 @@ const Selection = ({genres, genre, onGenreChange}) => (
   
       <div className ='selection'>
         <label>Genre</label>
-        <select value={genre} onChange ={onGenreChange}>
+        <select value={genre} defaultValue="16" onChange ={onGenreChange}>
          {genres.map( genre => (
         <option key={genre.id} value={genre.name}>{genre.name} </option>
         ))}

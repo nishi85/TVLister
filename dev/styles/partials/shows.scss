@@ -1,0 +1,20 @@
+.shows {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0 ;
+    margin-top: 0;
+    text-align: center;
+}
+
+.TVitem {
+    list-style: none;
+    width: 24%;
+    margin-bottom: 10px;
+   
+   
+    .thumbnail {
+        text-decoration: none;
+    }
+}
