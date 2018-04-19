@@ -11,7 +11,7 @@ const TVListItem = (show) => {
         <img src={imgUrl} alt="" />
         <div className="show-description">
           <h3>{show.name}</h3>
-          <h4> Average Rating: {show.rating}</h4>
+          <h4> <span>Average Rating:</span> {show.rating}</h4>
         </div>
       </Link>
     </li>

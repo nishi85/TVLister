@@ -1,3 +1,49 @@
 .navigation {
     width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+        .selection {
+        // display: flex;
+        // flex-direction: column;
+        margin-bottom: 30px;
+        width: 90%;
+        }
+
+        .selection label {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #555;
+        }
+
+            
+        .slider {
+        margin-bottom: 10px;
+        }
+
+        .slider label {
+        color: #555;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: block;
+        text-transform: capitalize;
+        }
+
+        button {
+                color: #0099CC; /* Text color */
+                background-color: transparent; 
+                border: 2px solid #0099CC; 
+                border-radius: 5px;
+                width: 100px;
+                margin: 0 auto;
+
+                &:hover {
+                    background-color: #E9FFFF;
+                }
+
+            }
+
+
+        
 }
+

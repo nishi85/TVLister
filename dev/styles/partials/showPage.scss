@@ -1,0 +1,53 @@
+.show-page {
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .showContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        border: 2px solid #0099CC; 
+        border-radius: 5px;
+        padding: 5px;
+        
+        .show-image {
+            width: 20%;
+        }
+
+        .show-details {
+            width: 75%;
+            text-align: justify;
+            margin: 20px;
+
+
+            h4, h5 {
+                margin: 15px 0;
+            }
+
+            .genres {
+                font-weight: 700;
+                display: flex;
+                flex-wrap: wrap;
+                
+                div {
+                    width: 20%;
+                    text-align: center;
+                     @include remCalc(12);
+                }
+                .separator {
+                color: lightgray;
+                padding: 0 10px;
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+}

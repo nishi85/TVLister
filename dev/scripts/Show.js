@@ -40,15 +40,15 @@ class Show extends React.Component {
         isLoading 
           ? <LoadingShow />
           : 
-        <div>
+        <div className="showContainer">
           <div className="show-image">
             <img src={imgUrl} alt="" />
           </div>
           <div className="show-details">
             <h1>
               {name}
-              <span>({status})</span>
             </h1>
+            <h4>Status: {status}</h4>
           <section className="genres">
                   {genres.map((genre, index) => (
                     <div key={genre.id}>
@@ -64,14 +64,8 @@ class Show extends React.Component {
               Rating:
               <span>{vote_average}</span>
             </h5>
-            {/* <h5>
-                  Runtime:
-                  <span>{`${runtime} min`}</span>
-                </h5> */}
             <h4>Overview</h4>
             <p>{overview}</p>
-
-  
           </div>
         </div>
      }

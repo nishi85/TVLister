@@ -24,12 +24,12 @@ class Navigation extends React.Component {
         {/* <Slider data={this.state.year} onChange={this.onChange} />
         <Slider data={this.state.rating} onChange={this.onChange} /> */}
         <div className="slider">
-          <label>{year.label}</label>
+          <label>From {year.label}:</label>
           <input type="range" min={year.min} max={year.max} step={year.step} onChange={onChangeYear} defaultValue={year.value} />
           <h3>{year.value}</h3>
         </div>
         <div className="slider">
-          <label>{rating.label}</label>
+          <label>Minimum {rating.label}:</label>
           <input type="range" min={rating.min} max={rating.max} step={rating.step} onChange={onChangeRating} defaultValue={rating.value} />
           <h3>{rating.value}</h3>
         </div>

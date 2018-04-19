@@ -1,7 +1,13 @@
+@mixin remCalc($fontSize) {
+   font-size: ($fontSize / 16) * 1rem;
+}
+
 @import "partials/setup.scss";
 @import "partials/main.scss";
 @import "partials/navigation.scss";
 @import "partials/shows.scss";
+@import "partials/showPage.scss";
+
 
 
 
@@ -16,6 +22,7 @@ header {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  color: #0099CC;
 
     h1{
       margin: 25 auto;
