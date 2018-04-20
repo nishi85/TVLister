@@ -14,7 +14,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/shows/:showId" component={Show} />
-            <Route component={NotFound} />
+            <Route component={Main} />
           </Switch>
         </div>
       </Router>;
