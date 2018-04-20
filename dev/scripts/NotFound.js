@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const NotFound = () => (
   <div>
     <h3>We couldn't find what you were looking for :(</h3>
-    <Link to="/">Here you can browse the movies</Link>
+    <Link to="/">Click Here to Browse Shows</Link>
   </div>
 );
 
