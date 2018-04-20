@@ -132,9 +132,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .main {
-  max-width: 1180px;
+  max-width: 95%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto; }
 
 .navigation {
   width: 20%;
@@ -268,9 +269,10 @@ header {
     margin: 25 auto; }
 
 .main {
-  max-width: 1180px;
+  max-width: 95%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 auto; }
 
 .navigation {
   width: 20%;

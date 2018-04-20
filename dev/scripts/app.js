@@ -11,9 +11,11 @@ class App extends React.Component {
     return <Router>
         <div>
           <Header />
+          <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/shows/:showId" component={Show} />
             <Route component={Main} />
+          </Switch>
         </div>
       </Router>;
   }
