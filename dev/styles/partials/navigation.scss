@@ -5,8 +5,7 @@
     width: 20%;
     display: flex;
     flex-wrap: wrap;
-    overflow: scroll;
-    // flex-direction: column;
+    overflow: auto;
     padding: 15px;
     max-height: 100vh;
         .selection {

@@ -157,7 +157,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 20%;
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
+  overflow: auto;
   padding: 15px;
   max-height: 100vh; }
   .navigation .selection {
@@ -364,7 +364,7 @@ header {
   width: 20%;
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
+  overflow: auto;
   padding: 15px;
   max-height: 100vh; }
   .navigation .selection {
