@@ -10,7 +10,6 @@ class App extends React.Component {
   render() {
     return <Router>
         <div>
-          <Header />
           <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/shows/:showId" component={Show} />

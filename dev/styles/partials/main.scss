@@ -4,5 +4,24 @@
     justify-content: center;
     margin: 0 auto;
     padding: 15px;
+    flex-wrap: wrap;
+
+}
+
+.sectionShows {
+    margin-left: 20%; 
+}
+
+@media (max-width: 940px) {
+    .sectionShows {
+        margin-left: 25%;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .sectionShows {
+        margin-left: 0;
+    }
 
 }

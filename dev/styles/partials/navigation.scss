@@ -1,13 +1,19 @@
 .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 20%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    overflow: scroll;
+    // flex-direction: column;
+    padding: 15px;
+    max-height: 100vh;
         .selection {
-        // display: flex;
-        // flex-direction: column;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 30px;
-        width: 90%;
+        width: 100%;
         }
 
         .selection label {
@@ -19,6 +25,7 @@
             
         .slider {
         margin-bottom: 10px;
+        width: 100%;
         }
 
         .slider label {
@@ -30,20 +37,60 @@
         }
 
         button {
-                color: #0099CC; /* Text color */
+                color: #333; /* Text color */
                 background-color: transparent; 
-                border: 2px solid #0099CC; 
+                border: 2px solid #333; 
                 border-radius: 5px;
                 width: 100px;
                 margin: 0 auto;
+                padding: 10px 20px;
 
                 &:hover {
-                    background-color: #E9FFFF;
+                    background-color: #efefef;
                 }
 
             }
-
-
         
+}
+
+
+
+@media (max-width: 768px) {
+
+    .navigation{
+        width: 25%;
+    }
+}
+
+@media (max-width: 580px) {
+    .navigation {
+        width:100%;
+        position: static;
+        // flex-direction: column;
+        // flex-direction: space-between;
+        
+        .selection {
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        .slider {
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        .search-button {
+            width: 100%;
+
+            button {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+
+    }
+
 }
 

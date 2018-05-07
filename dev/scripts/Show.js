@@ -51,8 +51,7 @@ class Show extends React.Component {
             <h4>Status: {status}</h4>
           <section className="genres">
                   {genres.map((genre, index) => (
-                    <div key={genre.id}>
-                      <span>{genre.name}</span>
+                    <div key={genre.id}><span>{genre.name}</span>
                       {index < genres.length - 1 && (
                         <span className="separator">|</span>
                       )}

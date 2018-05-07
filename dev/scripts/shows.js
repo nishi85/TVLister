@@ -4,7 +4,7 @@ import TVListItem from "./TVListItem";
 
 
 const Movies = ({ shows, page, onPageIncrease, onPageDecrease }) => (
-  <section>
+  <section className ="sectionShows">
     <ul className="shows">
       {shows.map(show => {
         console.log(show);

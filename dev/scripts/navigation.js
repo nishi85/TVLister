@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 import Selection from "./Selection";
 import Slider from "./Slider";
 import Button from "./Button";
+import Header from "./Header";
 
 class Navigation extends React.Component {
 
@@ -20,6 +21,7 @@ class Navigation extends React.Component {
 
 
     return <section className="navigation">
+        <Header />
         <Selection genre={genre} genres={genres} onGenreChange={onGenreChange} />
         {/* <Slider data={this.state.year} onChange={this.onChange} />
         <Slider data={this.state.rating} onChange={this.onChange} /> */}

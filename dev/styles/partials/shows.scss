@@ -13,8 +13,8 @@
     list-style: none;
     width: 24%;
     margin-bottom: 10px;
-    background: #E0FFFF;
-    border: 2px solid #0099CC;
+    background: #efefef;
+    border: 2px solid #333;
     border-radius: 5px;
     transition: all 1s;
         &:hover {
@@ -40,27 +40,48 @@
 }
 
 .pagination{
-    width: 35%;
+    width: 45%;
     display: flex;
     flex: wrap;
     margin: 0 auto;
     justify-content: space-between;
     span {
        text-transform: uppercase; 
+       padding-bottom: 15px;
         @include remCalc(14);
         align-self: center;
     }
 
     button {
-        color: #0099CC; /* Text color */
+        color: #333; /* Text color */
         background-color: transparent; /* Remove background color */
-        border: 2px solid #0099CC; /* Border thickness, line style, and color */
+        border: 2px solid #333; /* Border thickness, line style, and color */
         border-radius: 5px; /* Adds curve to border corners */
         width: 100px;
+        margin-bottom: 15px;
 
         &:hover {
-            background-color: #E9FFFF;
+            background-color: #efefef;
         }
 
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .TVitem {
+        width: 33%;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .TVitem {
+        width: 48%;
+    }
+
+    .pagination {
+        width: 80%;
     }
 }
